@@ -15,29 +15,29 @@ public class Calculadora {
 
 		try {
 
-			System.out.println("Programa calcula área TRI Isosceles");
+			System.out.println("Programa calcula Ã¡rea TRI Isosceles");
 			Scanner tcd = new Scanner(System.in);
 
 			double base = -1;
 			double lado = -1;
 
 			while(verificarExistencia(base, lado, lado)) {
-				System.out.println("Fala os bang que serão pedidos");
+				System.out.println("Insira os dados pedidos:");
 
 				while(base <= 0) {
-					System.out.println("Fala o valor da base aí");
+					System.out.println("informe o valor da base:");
 					base = tcd.nextDouble();
 				}
 				while(lado <= 0) {
-					System.out.println("Manda o valor do lado meu chapa");
+					System.out.println("Informe o valor do lado:");
 					lado = tcd.nextDouble();
 				}
 			}
 
-			System.out.println("Acabou o programa");
+			System.out.println("Fim do programa");
 			
 		} catch (Exception e) {
-			System.out.println("Calma que deu merda!!");
+			System.out.println("Falha ao processar!!");
 		}
 
 	}
